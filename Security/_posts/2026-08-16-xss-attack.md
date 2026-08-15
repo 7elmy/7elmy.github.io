@@ -2,8 +2,6 @@
 layout: post
 title: "XSS Attack — شرح مبسط"
 date: 2026-08-16 10:00:00 +0300
-categories:
-  - Security
 tags:
   - XSS
   - Angular
