@@ -1,10 +1,5 @@
----
----
-
-/*
- * Arabic technical-post styling for Jekyll / GitHub Pages.
- * The selectors are scoped to .rtl-article so the rest of the site keeps its theme.
- */
+// Arabic technical-post styles, scoped to .rtl-article so the rest of the
+// site keeps minima's default look.
 
 .rtl-article {
   color: #1f2937;
