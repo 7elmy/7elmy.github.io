@@ -1,0 +1,25 @@
+title: "7elmy — Technical Blog"
+description: "Notes on web security, .NET, Angular, and everything in between."
+author: 7elmy
+
+# Project site served from https://7elmy.github.io/github.io/
+url: "https://7elmy.github.io"
+baseurl: "/github.io"
+
+theme: minima
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Files/folders that should not be copied into _site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .vs
+  - README.md

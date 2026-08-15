@@ -4,3 +4,10 @@
 
 # Ignore all .vs folders (match in any directory)
 .vs/
+
+# Jekyll build output and local bundler state
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
