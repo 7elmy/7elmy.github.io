@@ -1,0 +1,198 @@
+---
+---
+
+/*
+ * Arabic technical-post styling for Jekyll / GitHub Pages.
+ * The selectors are scoped to .rtl-article so the rest of the site keeps its theme.
+ */
+
+.rtl-article {
+  color: #1f2937;
+  direction: rtl;
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 2;
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+.rtl-article > * {
+  max-width: 100%;
+}
+
+.rtl-article h1,
+.rtl-article h2,
+.rtl-article h3,
+.rtl-article h4 {
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.45;
+  scroll-margin-top: 1.5rem;
+}
+
+.rtl-article h1 {
+  border-bottom: 2px solid #e5e7eb;
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.65rem;
+}
+
+.rtl-article h2 {
+  border-right: 4px solid #2563eb;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin: 2.5rem 0 1rem;
+  padding-right: 0.75rem;
+}
+
+.rtl-article h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.rtl-article p,
+.rtl-article ul,
+.rtl-article ol {
+  margin: 0 0 1.2rem;
+}
+
+.rtl-article ul,
+.rtl-article ol {
+  padding-right: 1.6rem;
+  padding-left: 0;
+}
+
+.rtl-article li + li {
+  margin-top: 0.4rem;
+}
+
+.rtl-article hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 2.25rem 0;
+}
+
+.rtl-article blockquote {
+  background: #f8fafc;
+  border: 0;
+  border-right: 4px solid #60a5fa;
+  border-radius: 0.35rem;
+  color: #374151;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.rtl-article blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Inline code, URLs, and code blocks always read left-to-right. */
+.rtl-article :not(pre) > code,
+.rtl-article a,
+.rtl-article pre,
+.rtl-article pre code,
+.rtl-article .highlight,
+.rtl-article .highlight pre {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: plaintext;
+}
+
+.rtl-article :not(pre) > code {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 0.3rem;
+  color: #1d4ed8;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.88em;
+  padding: 0.12rem 0.35rem;
+}
+
+.rtl-article pre,
+.rtl-article .highlight {
+  -webkit-overflow-scrolling: touch;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 0.65rem;
+  color: #e2e8f0;
+  margin: 1.25rem 0 1.5rem;
+  overflow-x: auto;
+}
+
+.rtl-article pre {
+  padding: 1rem 1.15rem;
+}
+
+.rtl-article .highlight pre {
+  background: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.rtl-article pre code {
+  background: transparent;
+  color: inherit;
+  display: block;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0;
+  white-space: pre;
+}
+
+.rtl-article a {
+  color: #1d4ed8;
+  overflow-wrap: anywhere;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.rtl-article a:hover {
+  color: #1e40af;
+}
+
+@media (max-width: 640px) {
+  .rtl-article {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .rtl-article pre {
+    border-radius: 0.45rem;
+    margin-right: -0.25rem;
+    margin-left: -0.25rem;
+    padding: 0.85rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .rtl-article {
+    color: #e5e7eb;
+  }
+
+  .rtl-article h1,
+  .rtl-article h2,
+  .rtl-article h3,
+  .rtl-article h4 {
+    color: #f9fafb;
+  }
+
+  .rtl-article h1,
+  .rtl-article hr {
+    border-color: #374151;
+  }
+
+  .rtl-article blockquote {
+    background: #1f2937;
+    color: #d1d5db;
+  }
+
+  .rtl-article :not(pre) > code {
+    background: #172554;
+    border-color: #1e3a8a;
+    color: #bfdbfe;
+  }
+
+  .rtl-article a {
+    color: #93c5fd;
+  }
+}
