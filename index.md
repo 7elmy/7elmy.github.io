@@ -5,7 +5,7 @@ title: "Documentation"
 
 <div class="home">
   <section class="home__hero">
-    <span class="home__eyebrow">7elmy — Technical Documentation</span>
+    <span class="home__eyebrow">Helmy — Technical Documentation</span>
     <h1 class="home__title">{{ site.title | escape }}</h1>
     <p class="home__description">{{ site.description }}</p>
   </section>
