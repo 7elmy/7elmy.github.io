@@ -1,5 +1,12 @@
 ---
+# Jekyll front-matter tells Jekyll to process this file as SCSS.
 ---
 
-@import "minima";
+@charset "utf-8";
+
+@import "tokens";
+@import "base";
+@import "layout";
+@import "components";
+@import "code";
 @import "rtl-article";

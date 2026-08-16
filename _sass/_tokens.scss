@@ -1,0 +1,158 @@
+// Design tokens — colors, spacing, radius, shadow, typography.
+// Light palette on :root; dark palette when data-theme="dark" is set
+// (via inline script) or when the OS prefers dark and the user hasn't chosen.
+
+:root {
+  // Neutral scale
+  --color-bg: #ffffff;
+  --color-bg-subtle: #fafbfc;
+  --color-bg-muted: #f3f5f7;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f7f9fb;
+  --color-border: #e5e8ec;
+  --color-border-strong: #d3d7de;
+  --color-text: #0d1117;
+  --color-text-muted: #4b5563;
+  --color-text-subtle: #6b7280;
+
+  // Accent
+  --color-accent: #3451b2;
+  --color-accent-hover: #274092;
+  --color-accent-bg: #eef2ff;
+  --color-accent-border: #c7d2fe;
+
+  // Semantic
+  --color-info: #0369a1;
+  --color-info-bg: #f0f9ff;
+  --color-info-border: #bae6fd;
+  --color-success: #047857;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #a7f3d0;
+  --color-warning: #b45309;
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fde68a;
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fecaca;
+  --color-tip: #6d28d9;
+  --color-tip-bg: #f5f3ff;
+  --color-tip-border: #ddd6fe;
+
+  // Code (light)
+  --color-code-bg: #0b0f19;
+  --color-code-text: #e5e9f0;
+  --color-code-inline-bg: #f1f4f8;
+  --color-code-inline-text: #1f2937;
+  --color-code-inline-border: #e5e8ec;
+
+  // Elevation
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.10), 0 4px 8px rgba(15, 23, 42, 0.04);
+
+  // Radius
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  // Spacing scale (4px base)
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  // Layout
+  --layout-max: 1200px;
+  --layout-prose: 720px;
+  --header-height: 60px;
+
+  // Typography
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-xs: 0.75rem;    // 12
+  --fs-sm: 0.8125rem;  // 13
+  --fs-base: 0.9375rem;// 15
+  --fs-md: 1rem;       // 16
+  --fs-lg: 1.125rem;   // 18
+  --fs-xl: 1.375rem;   // 22
+  --fs-2xl: 1.75rem;   // 28
+  --fs-3xl: 2.25rem;   // 36
+  --fs-4xl: 2.75rem;   // 44
+
+  --lh-tight: 1.25;
+  --lh-snug: 1.4;
+  --lh-normal: 1.55;
+  --lh-relaxed: 1.75;
+
+  // Motion
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 260ms;
+
+  color-scheme: light;
+}
+
+@mixin dark-tokens {
+  --color-bg: #0b0d10;
+  --color-bg-subtle: #101317;
+  --color-bg-muted: #171b21;
+  --color-surface: #14181d;
+  --color-surface-hover: #1a1f26;
+  --color-border: #23282f;
+  --color-border-strong: #2e343d;
+  --color-text: #e6e8eb;
+  --color-text-muted: #a0a7b0;
+  --color-text-subtle: #7b828c;
+
+  --color-accent: #8ea6ff;
+  --color-accent-hover: #a9bcff;
+  --color-accent-bg: rgba(142, 166, 255, 0.10);
+  --color-accent-border: rgba(142, 166, 255, 0.28);
+
+  --color-info: #67c3ff;
+  --color-info-bg: rgba(103, 195, 255, 0.08);
+  --color-info-border: rgba(103, 195, 255, 0.22);
+  --color-success: #6ee7b7;
+  --color-success-bg: rgba(110, 231, 183, 0.08);
+  --color-success-border: rgba(110, 231, 183, 0.22);
+  --color-warning: #fbbf24;
+  --color-warning-bg: rgba(251, 191, 36, 0.08);
+  --color-warning-border: rgba(251, 191, 36, 0.22);
+  --color-danger: #fca5a5;
+  --color-danger-bg: rgba(252, 165, 165, 0.08);
+  --color-danger-border: rgba(252, 165, 165, 0.22);
+  --color-tip: #c4b5fd;
+  --color-tip-bg: rgba(196, 181, 253, 0.08);
+  --color-tip-border: rgba(196, 181, 253, 0.22);
+
+  --color-code-bg: #0d1117;
+  --color-code-text: #e5e9f0;
+  --color-code-inline-bg: #1a1f26;
+  --color-code-inline-text: #cdd6e0;
+  --color-code-inline-border: #262c34;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] { @include dark-tokens; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
