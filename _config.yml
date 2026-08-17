@@ -26,4 +26,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - .vs
+  - .claude
   - README.md
+  - CLAUDE.md
