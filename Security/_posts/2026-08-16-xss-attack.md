@@ -60,7 +60,7 @@ description: "شرح مبسط لأنواع XSS وطبقات الحماية ال�
 
 في Angular مثلًا، استخدام الـ Interpolation بالشكل الطبيعي:
 
-{% raw %}`{{ value }}`{% endraw %}
+` value `
 
 بيعمل **HTML escaping** تلقائيًا، وده بيخلي عرض الـ User Input أكثر أمانًا.
 
