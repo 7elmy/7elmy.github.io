@@ -2,8 +2,8 @@ title: "Helmy — Technical Blog"
 description: "Notes on web security, .NET, Angular, and everything in between."
 author: Helmy
 
-# User site served from https://Helmy.github.io/
-url: "https://Helmy.github.io"
+# User site served from https://7elmy.github.io/
+url: "https://7elmy.github.io"
 baseurl: ""
 
 theme: minima

@@ -1,13 +1,13 @@
-# Helmy.github.io — Project Notes
+# 7elmy.github.io — Project Notes
 
-Jekyll technical blog / documentation site published at https://Helmy.github.io/.
+Jekyll technical blog / documentation site published at https://7elmy.github.io/.
 
 ## Project posture
 
-- **Repo**: `github.com/Helmy/github.io` — public (GitHub Pages user site). Anything committed to `main` is public forever.
+- **Repo**: `github.com/7elmy/github.io` — public (GitHub Pages user site). Anything committed to `main` is public forever.
 - **Owner use**: personal / hobby.
 - **Default branch**: `main`. Pushes to `main` deploy automatically via GitHub Pages.
-- **Trusted domain**: `Helmy.github.io`.
+- **Trusted domain**: `7elmy.github.io`.
 - **Do not commit**: `.vs/`, `Gemfile.lock`, `_site/`, `.jekyll-cache/`, `vendor/`, or anything containing secrets. `.gitignore` already covers these.
 
 ## Local development
